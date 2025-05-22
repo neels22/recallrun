@@ -1,4 +1,4 @@
-
+from Graph.BFS.BFS import bfs
 
 
 # adj list uses dictionary where each key is a node and value is a list of nodes
@@ -59,6 +59,8 @@ if __name__ == "__main__":
 
     graphobject.display_graph()
     print(graphobject.adj_list)
+
+    bfs(graphobject.adj_list,1)
 
 
 
