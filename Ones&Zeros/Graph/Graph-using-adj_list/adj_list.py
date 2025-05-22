@@ -1,5 +1,5 @@
 from Graph.BFS.BFS import bfs
-
+from Graph.DFS.DFS import dfs_recursive,dfs_iterative
 
 # adj list uses dictionary where each key is a node and value is a list of nodes
 # for undirected graph the edge is added in both directions that means both the nodes (keys) will have the other node in their respective lists
@@ -60,7 +60,13 @@ if __name__ == "__main__":
     graphobject.display_graph()
     print(graphobject.adj_list)
 
+    print("bfs")
     bfs(graphobject.adj_list,1)
+    print("dfs recursive")
+    dfs_recursive(graphobject.adj_list,1)
+    print("dfs iterative")
+    dfs_iterative(graphobject.adj_list,1)
+
 
 
 
