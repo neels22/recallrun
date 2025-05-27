@@ -1,6 +1,5 @@
 from collections import deque
 
-
 def bfs(adj_list,startingnode):
     # bfs uses queue data structure
     # visited set to keep track of nodes that are already visited

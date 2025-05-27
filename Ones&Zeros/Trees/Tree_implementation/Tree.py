@@ -1,7 +1,7 @@
 from Tree_traversal.inorder import inorder_recursive
 from Tree_traversal.preorder import preorder_recursive
 from Tree_traversal.postorder import postorder_recursive
-
+from Tree_traversal.levelorder import levelorder
 class Node:
     def __init__(self,value):
         self.value = value 
@@ -19,4 +19,4 @@ inorder_recursive(root)
 print()
 print(preorder_recursive(root))
 print(postorder_recursive(root))
-
+levelorder(root)
